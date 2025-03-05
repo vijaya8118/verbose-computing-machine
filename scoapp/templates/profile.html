@@ -1,0 +1,25 @@
+{% include 'user_navbar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Welcome, {{ user.username }}!</h1>
+
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Phone Number:</strong> {{ user.phone_no }}</p>
+    <p><strong>Role:</strong> {{ user.get_role_display }}</p>  <!-- Displays the friendly name of the role -->
+
+    <hr>
+
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Account Created:</strong> {{ user.date_joined }}</p>
+
+    <button onclick="window.location.href='{% url 'setup' %}'" class="btn btn-primary">Register a New Employee for Your Company</button>
+
+
+</body>
+</html>
