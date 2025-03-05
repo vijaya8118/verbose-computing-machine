@@ -25,8 +25,7 @@ SECRET_KEY = "django-insecure-s73k%1rwq2rs7epi*39jr1rzf+gylw*l0&-2s3=mabka=yuh-n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','bigco.localhost',]
-BASE_URL = 'localhost'
+ALLOWED_HOSTS = ['*',]
 LOGIN_URL = '/create_member/'
 CSRF_TRUSTED_ORIGINS = ['https://*']
 PORT = ':8000'
@@ -107,8 +106,7 @@ DATABASES = {
         "ENGINE": "django_tenants.postgresql_backend",
         "USER": "postgres",
         "PASSWORD": "root1234",
-        "HOST":'localhost',
-        "PORT":5433,
+       
     },   
 }
 DATABASE_ROUTERS = (
