@@ -106,7 +106,8 @@ DATABASES = {
         "ENGINE": "django_tenants.postgresql_backend",
         "USER": "postgres",
         "PASSWORD": "root1234",
-       
+        "HOST":'database-1.c3s80gs4c4uq.eu-north-1.rds.amazonaws.com',
+        "PORT":5432,
     },   
 }
 DATABASE_ROUTERS = (
